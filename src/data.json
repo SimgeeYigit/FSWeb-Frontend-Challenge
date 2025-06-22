@@ -1,0 +1,85 @@
+{
+  "en": {
+    "navbarSection": {
+      "mode": {
+        "light": "DARK MODE",
+        "dark": "LIGHT MODE"
+      },
+      "title": {
+        "highlight": "TÜRKÇE",
+        "rest": "'YE GEÇ"
+      },
+      "nav": {
+        "text": "S",
+        "sections": ["Skills", "Projects", "Hire me"]
+      }
+    },
+    "heroSection": {
+      "name": "Simge",
+      "title": {
+        "first": "Creative thinker",
+        "second": "Minimalism lover"
+      },
+      "text": "Hi, I’m Simge. I’m a full-stack developer. If you are looking for a Developer who to craft solid and scalable frontend products with great user experiences. Let’s shake hands with me.",
+      "socials": [
+        {
+          "icon": "",
+          "text": "Hire me",
+          "link": ""
+        },
+        {
+          "icon": "",
+          "text": "Github",
+          "link": ""
+        },
+        {
+          "icon": "",
+          "text": "Linkedin",
+          "link": ""
+        }
+      ]
+    }
+  },
+
+  "tr": {
+    "navbarSection": {
+      "mode": {
+        "light": "KARANLIK MOD",
+        "dark": "AYDINLIK MOD"
+      },
+      "title": {
+        "highlight": "ENGLISH",
+        "rest": "SWITCH TO"
+      },
+      "nav": {
+        "text": "S",
+        "sections": ["Yetenekler", "Projeler", "Beni İşe Al"]
+      }
+    },
+    "heroSection": {
+      "name": "Simge",
+      "title": {
+        "first": "Yaratıcı düşünür",
+        "second": "Minimalizm aşığı"
+      },
+      "text": "Merhaba, ben Simge. Full-stack developerım. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri tasarlayacak bir geliştirici arıyorsanız. Benimle el sıkışın.",
+      "socials": [
+        {
+          "icon": "",
+          "text": "Beni işe al",
+          "link": ""
+        },
+        {
+          "icon": "",
+          "text": "Github",
+          "link": ""
+        },
+        {
+          "icon": "",
+          "text": "Linkedin",
+          "link": ""
+        }
+      ]
+    }
+  }
+}
