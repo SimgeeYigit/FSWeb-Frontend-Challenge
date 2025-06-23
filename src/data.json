@@ -38,6 +38,31 @@
           "link": ""
         }
       ]
+    },
+    "skillsSection": {
+      "title": "Skills",
+      "skills": [
+        {
+          "name": "Java Script",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "React.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Node.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
+    },
+    "footerSection": {
+      "title": {
+        "first": "Let's work together on",
+        "second": "your next product."
+      },
+      "email": "simgeyigit98@gmail.com",
+      "contact": ["Personal Blog", "Github", "Linkedin"]
     }
   },
 
@@ -53,7 +78,7 @@
       },
       "nav": {
         "text": "S",
-        "sections": ["Yetenekler", "Projeler", "Beni İşe Al"]
+        "sections": ["Yetenekler", "Projeler", "Bana Ulaşın"]
       }
     },
     "heroSection": {
@@ -62,11 +87,11 @@
         "first": "Yaratıcı düşünür",
         "second": "Minimalizm aşığı"
       },
-      "text": "Merhaba, ben Simge. Full-stack developerım. Harika kullanıcı deneyimlerine sahip sağlam ve ölçeklenebilir frontend ürünleri tasarlayacak bir geliştirici arıyorsanız. Benimle el sıkışın.",
+      "text": "Merhaba, ben Simge. Full-stack yazılım geliştiricisiyim. Eğer sağlam ve özelleştirilebilir frontend ürünleri tasarlayıp, harika kullanıcı deneyimleri sunabilecek bir geliştirici arıyorsanız, gelin el sıkışalım!",
       "socials": [
         {
           "icon": "",
-          "text": "Beni işe al",
+          "text": "Bana Ulaşın",
           "link": ""
         },
         {
@@ -80,6 +105,31 @@
           "link": ""
         }
       ]
+    },
+    "skillsSection": {
+      "title": "Skills",
+      "skills": [
+        {
+          "name": "Java Script",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "React.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        },
+        {
+          "name": "Node.Js",
+          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        }
+      ]
+    },
+    "footerSection": {
+      "title": {
+        "first": "Bir sonraki ürününüzde",
+        "second": "birlikte çalışalım"
+      },
+      "email": "simgeyigit98@gmail.com",
+      "contact": ["Personal Blog", "Github", "Linkedin"]
     }
   }
 }

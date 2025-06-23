@@ -8,7 +8,7 @@ const Header = () => {
   const dispatch = useDispatch();
 
   return (
-    <header>
+    <header className="pt-4 pr-[20rem] pb-20 pl-[20rem]">
       <div className="text-[#777777] font-bold flex justify-end pb-10">
         <label className="relative inline-flex items-center cursor-pointer">
           <input

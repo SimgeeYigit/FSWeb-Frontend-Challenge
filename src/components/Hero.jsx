@@ -6,7 +6,7 @@ const Hero = () => {
   const data = content.heroSection;
 
   return (
-    <section className="py-14">
+    <section className="py-16 pt-4 pr-[20rem] pb-20 pl-[20rem]">
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-8 w-[50%]">
           <div className="flex items-center gap-4">
