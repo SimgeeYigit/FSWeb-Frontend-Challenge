@@ -6,9 +6,9 @@ const Skills = () => {
   console.log(data)
 
   return (
-    <section className="pt-10 pt-4 pr-[20rem] pb-20 pl-[20rem]">
+    <section className="pt-8 pr-[20rem] pl-[20rem]">
       <h1 className="title pb-6">{data.title}</h1>
-      <div className="flex justify-evenly gap-[120px] pb-10 border-b-[1px] border-solid border-[#BAB2E7]">
+      <div className="flex justify-evenly gap-[120px] pb-12 border-b-[1px] border-solid border-[#BAB2E7]">
         {data.skills.map((skill) => (
           <div>
             <p className="second-title pb-6">{skill.name}</p>

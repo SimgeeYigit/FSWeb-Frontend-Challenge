@@ -56,6 +56,40 @@
         }
       ]
     },
+    "profileSection": {
+      "title": "Profile",
+      "profile": {
+        "title": "Profile",
+        "personal": [
+          {
+            "title": "Date of Birth",
+            "text": "25.04.1998"
+          },
+          {
+            "title": "Location",
+            "text": "Ankara"
+          },
+          {
+            "title": "Education",
+            "text": {
+              "first": "Eskisehir Osmangazi Uni. Civil Engineering",
+              "second": "Bachelor's Degree, 2021"
+            }
+          },
+          {
+            "title": "Preferred Role",
+            "text": "Full Stack Developer"
+          }
+        ]
+      },
+      "aboutMe": {
+        "title": "About Me",
+        "text": {
+          "first": "I am a disciplined and eager-to-learn software developer. I aim to create user-focused, simple, and functional solutions.",
+          "second": "I am a team player who can also take individual responsibility. I strive to improve myself constantly by keeping up with the latest technologies."
+        }
+      }
+    },
     "footerSection": {
       "title": {
         "first": "Let's work together on",
@@ -122,6 +156,40 @@
           "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
         }
       ]
+    },
+    "profileSection": {
+      "title": "Profil",
+      "profile": {
+        "title": "Profil",
+        "personal": [
+          {
+            "title": "Doğum Tarihi",
+            "text": "25.04.1998"
+          },
+          {
+            "title": "İkamet Şehri",
+            "text": "Ankara"
+          },
+          {
+            "title": "Eğitim Durumu",
+            "text": {
+              "first": "Eskisehir Osmangazi Uni. Civil Engineering",
+              "second": "Bachelor's Degree, 2021"
+            }
+          },
+          {
+            "title": "Tercih Ettiği Rol",
+            "text": "Full Stack Developer"
+          }
+        ]
+      },
+      "aboutMe": {
+        "title": "About Me",
+        "text": {
+          "first": "Disiplinli ve öğrenmeye açık bir yazılım geliştiriciyim. Kullanıcı odaklı, sade ve işlevsel çözümler üretmeyi hedeflerim.",
+          "second": "Takım çalışmasına uyumlu, aynı zamanda bireysel sorumluluk alabilen bir yapıya sahibim. Teknolojiyi yakından takip ederek sürekli kendimi geliştirmeye özen gösteririm."
+        }
+      }
     },
     "footerSection": {
       "title": {
