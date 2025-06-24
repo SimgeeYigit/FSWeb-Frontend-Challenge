@@ -3,7 +3,6 @@ import { useSelector } from "react-redux";
 const Skills = () => {
   const { content } = useSelector((store) => store);
   const data = content.skillsSection;
-  console.log(data)
 
   return (
     <section className="pt-8 pr-[20rem] pl-[20rem]">

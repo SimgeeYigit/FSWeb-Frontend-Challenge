@@ -97,6 +97,32 @@
       },
       "email": "simgeyigit98@gmail.com",
       "contact": ["Personal Blog", "Github", "Linkedin"]
+    },
+    "projectsSection": {
+      "title": "Projects",
+      "projects": [
+        {
+          "title": "Pizza Order System",
+          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "need": ["react", "axios", "css"],
+          "github": "https://github.com/SimgeeYigit/fsweb-s8-challenge-pizza",
+          "view": "View Site"
+        },
+        {
+          "title": "Portfolio Project",
+          "text": "I developed my personal portfolio website using React and modern frontend technologies. I implemented the design pixel-perfect and built a fully responsive layout, including both dark/light theme support and bilingual options in Turkish and English. User preferences are stored via LocalStorage. I deployed the project on Vercel, making it publicly accessible for everyone.",
+          "need": ["react", "redux", "tailwindcss"],
+          "github": "https://github.com/SimgeeYigit/FSWeb-Frontend-Challenge",
+          "view": "View Site"
+        },
+        {
+          "title": "Favorite Movies Archive",
+          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "need": ["react", "axios", "css"],
+          "github": "https://github.com/SimgeeYigit/FSWeb-Frontend-Challenge",
+          "view": "View Site"
+        }
+      ]
     }
   },
 
@@ -173,8 +199,8 @@
           {
             "title": "Eğitim Durumu",
             "text": {
-              "first": "Eskisehir Osmangazi Uni. Civil Engineering",
-              "second": "Bachelor's Degree, 2021"
+              "first": "Eskişehir Osmangazi Üni. İnşaat Mühendisliği",
+              "second": "Lisans, 2021"
             }
           },
           {
@@ -191,9 +217,28 @@
         }
       }
     },
+    "projectsSection": {
+      "title": "Projects",
+      "projects": [
+        {
+          "title": "ABC",
+          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "need": ["react", "axios", "css"],
+          "github": "Github",
+          "view": "View Site"
+        },
+        {
+          "title": "Portfolio Project",
+          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "need": ["react", "redux", "tailwindcss"],
+          "github": "Github",
+          "view": "View Site"
+        }
+      ]
+    },
     "footerSection": {
       "title": {
-        "first": "Bir sonraki ürününüzde",
+        "first": "Bir sonraki projenizde",
         "second": "birlikte çalışalım"
       },
       "email": "simgeyigit98@gmail.com",
