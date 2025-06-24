@@ -1,11 +1,39 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage, changeMode } from "../store/actions/actions";
+import useLocalStorage from "../hooks/useLocalStorage";
 
 const Header = () => {
   const { content, language, mode } = useSelector((store) => store);
+  const [storedLanguage, setStoredLanguage] = useLocalStorage(
+    "language",
+    language
+  );
+  const [storedMode, setStoredMode] = useLocalStorage("mode", mode);
+
   const data = content.navbarSection;
   const dispatch = useDispatch();
+
+  useEffect(() => {
+    if (storedLanguage !== language) {
+      setStoredLanguage(language);
+    }
+  }, [language, storedLanguage, setStoredLanguage]);
+
+  useEffect(() => {
+    if (storedMode !== mode) {
+      setStoredMode(mode);
+    }
+  }, [mode, storedMode, setStoredMode]);
+
+  useEffect(() => {
+    if (storedLanguage && storedLanguage !== language) {
+      dispatch(changeLanguage());
+    }
+    if (storedMode && storedMode !== mode) {
+      dispatch(changeMode());
+    }
+  }, []);
 
   useEffect(() => {
     if (mode === "dark") {
@@ -41,7 +69,9 @@ const Header = () => {
             </span>
           </div>
         </label>
-        <p className="dark:text-[#D9D9D9]">{mode === "dark" ? data.mode.dark : data.mode.light}</p>
+        <p className="dark:text-[#D9D9D9]">
+          {mode === "dark" ? data.mode.dark : data.mode.light}
+        </p>
         <p className="px-4">|</p>
         <p
           onClick={() => {
@@ -52,11 +82,15 @@ const Header = () => {
           {language === "tr" ? (
             <>
               <span className="dark:text-[#777777]">{data.title.rest}</span>{" "}
-              <span className="text-[#4731D3] dark:text-[#CFCBFF]">{data.title.highlight}</span>
+              <span className="text-[#4731D3] dark:text-[#CFCBFF]">
+                {data.title.highlight}
+              </span>
             </>
           ) : (
             <>
-              <span className="text-[#4731D3] dark:text-[#CFCBFF]">{data.title.highlight}</span>
+              <span className="text-[#4731D3] dark:text-[#CFCBFF]">
+                {data.title.highlight}
+              </span>
               <span className="dark:text-[#777777]">{data.title.rest}</span>
             </>
           )}
