@@ -9,7 +9,7 @@ const Projects = () => {
   const img = [pizza, portfolio, film];
 
   return (
-    <section className="pr-[20rem] pl-[20rem] pb-[150px]">
+    <section id="projects" className="pr-[20rem] pl-[20rem] pb-[150px]">
       <p className="title pb-8">{data.title}</p>
       <div className="flex justify-between">
         {data.projects.map((project, index) => (

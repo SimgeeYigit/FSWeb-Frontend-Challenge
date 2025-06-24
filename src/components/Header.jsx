@@ -4,9 +4,10 @@ import { changeLanguage, changeMode } from "../store/actions/actions";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 
 const Header = () => {
+  const history = useHistory();
   const { content, language, mode } = useSelector((store) => store);
   const [storedLanguage, setStoredLanguage] = useLocalStorage(
     "language",
@@ -138,13 +139,23 @@ const Header = () => {
           {data.nav.sections.map((section, index) => (
             <div
               key={index}
+              onClick={() => {
+                if (index === 0) {
+                  document
+                    .getElementById("skills")
+                    .scrollIntoView({ behavior: "smooth" });
+                } else if (index === 1) {
+                  document
+                    .getElementById("projects")
+                    .scrollIntoView({ behavior: "smooth" });
+                } else if (index === 2) {
+                  history.push("/contact");
+                }
+              }}
+              style={{ cursor: "pointer" }}
               className="font-medium text-lg text-[#6B7280] last:border last:rounded-md last:py-3 last:px-8 last:border-[#3730A3] last:text-[#3730A3] dark:last:text-[#3730A3] dark:last:bg-[#FFFFFF]"
             >
-              {index === 2 ? (
-                <Link to="/contact">{section}</Link>
-              ) : (
-                <p>{section}</p>
-              )}
+              {section}
             </div>
           ))}
         </div>
