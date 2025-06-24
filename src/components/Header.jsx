@@ -4,6 +4,7 @@ import { changeLanguage, changeMode } from "../store/actions/actions";
 import useLocalStorage from "../hooks/useLocalStorage";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { content, language, mode } = useSelector((store) => store);
@@ -73,6 +74,7 @@ const Header = () => {
       },
     });
   };
+
   return (
     <header className="pt-4 pr-[20rem] pb-20 pl-[20rem]">
       <div className="text-[#777777] font-bold flex justify-end pb-10 items-center gap-4 ">
@@ -136,9 +138,13 @@ const Header = () => {
           {data.nav.sections.map((section, index) => (
             <div
               key={index}
-              className="font-medium text-lg text-[#6B7280] last:border last:rounded-md last:py-3 last:px-8 last:border-[#3730A3] last:text-[#3730A3] dark:last:text-[#3730A3] dark:last:bg-[#FFFFFF] last:border-[#FFFFFF]"
+              className="font-medium text-lg text-[#6B7280] last:border last:rounded-md last:py-3 last:px-8 last:border-[#3730A3] last:text-[#3730A3] dark:last:text-[#3730A3] dark:last:bg-[#FFFFFF]"
             >
-              <p>{section}</p>
+              {index === 2 ? (
+                <Link to="/contact">{section}</Link>
+              ) : (
+                <p>{section}</p>
+              )}
             </div>
           ))}
         </div>
