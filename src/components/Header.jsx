@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage, changeMode } from "../store/actions/actions";
 import useLocalStorage from "../hooks/useLocalStorage";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Header = () => {
   const { content, language, mode } = useSelector((store) => store);
@@ -43,6 +45,34 @@ const Header = () => {
     }
   }, [mode]);
 
+  const notifymode = () => {
+    const messageTr =
+      mode === "dark" ? "Aydınlık moda geçildi!" : "Karanlık moda geçildi!";
+    const messageEn =
+      mode === "dark" ? "Switched to light mode!" : "Switched to dark mode!";
+    const bgColor = mode === "dark" ? "#" : "#333333";
+    const textColor = mode === "dark" ? "#000000" : "#ffffff";
+
+    toast.success(language === "tr" ? messageTr : messageEn, {
+      style: {
+        background: bgColor,
+        color: textColor,
+      },
+    });
+  };
+  const notifylang = () => {
+    const message =
+      language === "tr" ? "Switch to English!" : "Türkçe diline çevrildi!";
+    const bgColor = mode === "dark" ? "#333333" : "#ffffff";
+    const textColor = mode === "dark" ? "#ffffff" : "#000000";
+
+    toast.success(message, {
+      style: {
+        background: bgColor,
+        color: textColor,
+      },
+    });
+  };
   return (
     <header className="pt-4 pr-[20rem] pb-20 pl-[20rem]">
       <div className="text-[#777777] font-bold flex justify-end pb-10 items-center gap-4 ">
@@ -53,6 +83,7 @@ const Header = () => {
             data-testid="darkMode-toggle"
             checked={mode === "dark"}
             onChange={() => dispatch(changeMode())}
+            onClick={notifymode}
           />
           <div
             className={`w-[55px] h-[24px] rounded-full p-[2px] relative transition-all duration-500 transform -rotate-180 ${
@@ -75,6 +106,7 @@ const Header = () => {
         <p className="px-4">|</p>
         <p
           onClick={() => {
+            notifylang();
             dispatch(changeLanguage());
           }}
           className="cursor-pointer"
