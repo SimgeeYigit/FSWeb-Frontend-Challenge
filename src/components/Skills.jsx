@@ -11,7 +11,7 @@ const Skills = () => {
         {data.skills.map((skill) => (
           <div>
             <p className="second-title pb-6">{skill.name}</p>
-            <p className="text text-justify">{skill.text}</p>
+            <p className="text text-justify dark:text-[#FFFFFF]">{skill.text}</p>
           </div>
         ))}
       </div>

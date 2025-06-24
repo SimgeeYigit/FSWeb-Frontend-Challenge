@@ -1,32 +1,47 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeLanguage } from "../store/actions/actions";
+import { changeLanguage, changeMode } from "../store/actions/actions";
 
 const Header = () => {
-  const { content, language } = useSelector((store) => store);
+  const { content, language, mode } = useSelector((store) => store);
   const data = content.navbarSection;
   const dispatch = useDispatch();
 
+  useEffect(() => {
+    if (mode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, [mode]);
+
   return (
     <header className="pt-4 pr-[20rem] pb-20 pl-[20rem]">
-      <div className="text-[#777777] font-bold flex justify-end pb-10">
+      <div className="text-[#777777] font-bold flex justify-end pb-10 items-center gap-4 ">
         <label className="relative inline-flex items-center cursor-pointer">
           <input
-            // onChange={() => {
-            //   darkMode ? setDarkMode(false) : setDarkMode(true);
-            // }}
             type="checkbox"
-            value=""
             className="sr-only peer"
             data-testid="darkMode-toggle"
-            // checked={darkMode}
+            checked={mode === "dark"}
+            onChange={() => dispatch(changeMode())}
           />
-          <div className="w-14 h-6 bg-gray-200 rounded-full peer peer-focus:ring-4 peer-focus:ring-[#3730A3] dark:peer-focus:ring-[#3730A3] dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-[#FFE86E] after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-[#FFE86E] after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-[#3730A3]"></div>
-          <span className="ms-3 font-medium text-gray-900 dark:text-gray-300">
-            {/* {darkMode ? "Dark Mode On" : "Dark Mode Off"} */}
-          </span>
+          <div
+            className={`w-[55px] h-[24px] rounded-full p-[2px] relative transition-all duration-500 transform -rotate-180 ${
+              mode === "dark" ? "bg-[#3A3A3A]" : "bg-[#4731D3]"
+            }`}
+          >
+            <span
+              className={`absolute top-[4px] left-[5px] w-[16px] h-[16px] rounded-full bg-[#FFE86E] shadow-md transform transition-all duration-500 flex items-center justify-center
+                ${mode === "dark" ? "translate-x-[27px]" : "translate-x-0"}`}
+            >
+              {mode === "dark" && (
+                <span className="absolute w-[16px] h-[16px] rounded-full bg-[#3A3A3A] -left-[7px] top-0"></span>
+              )}
+            </span>
+          </div>
         </label>
-        <p>{data.mode.light}</p>
+        <p className="dark:text-[#D9D9D9]">{mode === "dark" ? data.mode.dark : data.mode.light}</p>
         <p className="px-4">|</p>
         <p
           onClick={() => {
@@ -36,26 +51,26 @@ const Header = () => {
         >
           {language === "tr" ? (
             <>
-              {data.title.rest}{" "}
-              <span className="text-[#4731D3]">{data.title.highlight}</span>
+              <span className="dark:text-[#777777]">{data.title.rest}</span>{" "}
+              <span className="text-[#4731D3] dark:text-[#CFCBFF]">{data.title.highlight}</span>
             </>
           ) : (
             <>
-              <span className="text-[#4731D3]">{data.title.highlight}</span>
-              {data.title.rest}
+              <span className="text-[#4731D3] dark:text-[#CFCBFF]">{data.title.highlight}</span>
+              <span className="dark:text-[#777777]">{data.title.rest}</span>
             </>
           )}
         </p>
       </div>
       <nav className="flex font-inter items-center justify-between">
-        <p className="text-2xl text-[#7B61FF] bg-[#EEEBFF] w-[64px] h-[64px] rounded-full flex items-center justify-center">
+        <p className="text-2xl text-[#7B61FF] bg-[#EEEBFF] w-[64px] h-[64px] rounded-full flex items-center justify-center dark:bg-[#4731D3] dark:text-[#8F88FF]">
           {data.nav.text}
         </p>
         <div className="flex gap-20 items-center">
           {data.nav.sections.map((section, index) => (
             <div
               key={index}
-              className="font-medium text-lg text-[#6B7280] last:border last:rounded-md last:py-3 last:px-8 last:border-[#3730A3] last:text-[#3730A3]"
+              className="font-medium text-lg text-[#6B7280] last:border last:rounded-md last:py-3 last:px-8 last:border-[#3730A3] last:text-[#3730A3] dark:last:text-[#3730A3] dark:last:bg-[#FFFFFF] last:border-[#FFFFFF]"
             >
               <p>{section}</p>
             </div>

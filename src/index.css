@@ -5,17 +5,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-  @apply font-inter 
+  @apply font-inter dark:bg-[#252128]
 }
 
 /* siyah */
 .title {
-  @apply font-semibold text-5xl text-[#1F2937]
+  @apply font-semibold text-5xl text-[#1F2937] dark:text-[#AEBCCF]
 }
 
 /* mor */
 .second-title {
-  @apply font-medium text-3xl text-[#4338CA]
+  @apply font-medium text-3xl text-[#4338CA] dark:text-[#B7AAFF]
 }
 
 .text {

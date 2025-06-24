@@ -9,31 +9,29 @@ const Profile = () => {
         <p className="title pb-6">{data.title}</p>
 
         <div className="flex">
-          {/* Profil Bloğu */}
           <div className="w-[50%]">
             <p className="second-title pb-4">{data.profile.title}</p>
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-4 ">
               {data.profile.personal.map((item, index) => (
                 <div key={index} className="flex gap-3 text-lg">
-                  <p className="font-semibold w-40 text-lg">{item.title}</p>
+                  <p className="font-semibold w-40 text-lg dark:text-[#FFFFFF]">{item.title}</p>
 
                   {typeof item.text === "object" ? (
-                    <div className="font-normal text-[#000000] text-lg">
+                    <div className="font-normal text-[#000000] text-lg dark:text-[#FFFFFF]">
                       <p>{item.text.first}</p>
                       <p>{item.text.second}</p>
                     </div>
                   ) : (
-                    <p className="font-normal text-[#000000] text-lg">{item.text}</p>
+                    <p className="font-normal text-[#000000] text-lg dark:text-[#FFFFFF]">{item.text}</p>
                   )}
                 </div>
               ))}
             </div>
           </div>
 
-          {/* Hakkımda Bloğu */}
           <div className="w-[40%]">
             <p className="second-title pb-4">{data.aboutMe.title}</p>
-            <div className="text-lg text-[#6B7280] font-normal text-justify">
+            <div className="text-lg text-[#6B7280] font-normal text-justify dark:text-[#FFFFFF]">
               <p>{data.aboutMe.text.first}</p>
               <br />
               <p>{data.aboutMe.text.second}</p>

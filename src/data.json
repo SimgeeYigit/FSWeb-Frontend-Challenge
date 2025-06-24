@@ -43,16 +43,16 @@
       "title": "Skills",
       "skills": [
         {
-          "name": "Java Script",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "name": "JavaScript",
+          "text": "I have experience in frontend development using JavaScript and can create dynamic user interfaces."
         },
         {
           "name": "React.Js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "text": "I can develop component-based, reusable, and dynamic user interfaces using React.js."
         },
         {
-          "name": "Node.Js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "name": "Python",
+          "text": "I can perform basic data processing and automation tasks using Python."
         }
       ]
     },
@@ -171,15 +171,15 @@
       "skills": [
         {
           "name": "Java Script",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "text": "Java Script ile Frontend geliştirme süreçlerinde deneyim sahibiyim ve kullanıcı arayüzlerini dinamik hale getirebiliyorum."
         },
         {
           "name": "React.Js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "text": "React.js ile bileşen tabanlı, yeniden kullanılabilir ve dinamik kullanıcı arayüzleri geliştirebiliyorum."
         },
         {
-          "name": "Node.Js",
-          "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          "name": "Python",
+          "text": "Python ile temel düzeyde veri işleme ve otomasyon görevlerini yerine getirebiliyorum."
         }
       ]
     },
@@ -210,7 +210,7 @@
         ]
       },
       "aboutMe": {
-        "title": "About Me",
+        "title": "Hakkımda",
         "text": {
           "first": "Disiplinli ve öğrenmeye açık bir yazılım geliştiriciyim. Kullanıcı odaklı, sade ve işlevsel çözümler üretmeyi hedeflerim.",
           "second": "Takım çalışmasına uyumlu, aynı zamanda bireysel sorumluluk alabilen bir yapıya sahibim. Teknolojiyi yakından takip ederek sürekli kendimi geliştirmeye özen gösteririm."
