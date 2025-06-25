@@ -6,21 +6,23 @@ const Footer = () => {
   const data = content.footerSection;
 
   return (
-    <footer className="h-[409px] bg-[#F9F9F9] dark:bg-[#141414]">
-      <div className="flex flex-col justify-center gap-12 h-full pt-4 pr-[10rem] pb-20 pl-[10rem]">
+    <footer className="md:h-[409px] bg-[#F9F9F9] dark:bg-[#141414]">
+      <div className="flex flex-col justify-center gap-12 h-full pt-4 pr-[2rem] pb-20 pl-[2rem] md:pr-[10rem] md:pl-[10rem]">
         <div className="flex flex-col font-semibold text-[42px] text-[#1F2937] dark:text-[#AEBCCF]">
           <p>{data.title.first}</p>
           <p>{data.title.second}</p>
         </div>
-        <div className="flex items-center">
+        <div className="flex md:items-center md:flex-row flex-col">
+          <div className="flex">
           <span className="mr-1">👉</span>
           <a
             href="mailto:simgeyigit98@gmail.com"
-            className="text-[#AF0C48] font-medium text-xl underline decoration-[#AF0C48] decoration-solid underline-offset-[5px] decoration-1 dark:text-[#BAB2E7] dark:decoration-[#BAB2E7]"
+            className="pb-4 text-[#AF0C48] font-medium text-xl underline decoration-[#AF0C48] decoration-solid underline-offset-[5px] decoration-1 dark:text-[#BAB2E7] dark:decoration-[#BAB2E7]"
           >
             {data.email}
           </a>
-          <div className="flex justify-end w-full gap-5">
+          </div>
+          <div className="flex justify-end w-full gap-5 md:flex-row flex-col">
             {data.contact.map((contact, index) => {
               if (index === 0) {
                 return (

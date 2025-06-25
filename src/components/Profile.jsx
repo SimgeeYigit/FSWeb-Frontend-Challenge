@@ -4,16 +4,16 @@ const Profile = () => {
   const { content } = useSelector((store) => store);
   const data = content.profileSection;
   return (
-    <section className="pt-12 pb-12 pr-[10rem] pl-[10rem]">
+    <section className="pt-12 pb-12 pr-[2rem] pl-[2rem] md:pr-[10rem] md:pl-[10rem]">
       <div className="border-b-[1px] border-solid border-[#BAB2E7] pb-12">
         <p className="title pb-6">{data.title}</p>
 
-        <div className="flex">
+        <div className="flex md:flex-row flex-col gap-10">
           <div className="w-[50%]">
             <p className="second-title pb-4">{data.profile.title}</p>
-            <div className="flex flex-col gap-4 ">
+            <div className="flex flex-col gap-4">
               {data.profile.personal.map((item, index) => (
-                <div key={index} className="flex gap-3 text-lg">
+                <div key={index} className="flex gap-3 text-lg md:flex-row flex-col">
                   <p className="font-semibold w-40 text-lg dark:text-[#FFFFFF]">{item.title}</p>
 
                   {typeof item.text === "object" ? (
@@ -29,7 +29,7 @@ const Profile = () => {
             </div>
           </div>
 
-          <div className="w-[40%]">
+          <div className="md:w-[40%]">
             <p className="second-title pb-4">{data.aboutMe.title}</p>
             <div className="text-lg text-[#6B7280] font-normal text-justify dark:text-[#FFFFFF]">
               <p>{data.aboutMe.text.first}</p>

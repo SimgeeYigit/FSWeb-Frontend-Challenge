@@ -9,9 +9,9 @@ const Projects = () => {
   const img = [pizza, portfolio, film];
 
   return (
-    <section id="projects" className="pr-[10rem] pl-[10rem] pb-[150px]">
+    <section id="projects" className="pr-[2rem] pl-[2rem] pb-[60px] md:pb-[150px] md:pr-[10rem] md:pl-[10rem]"> 
       <p className="title pb-8">{data.title}</p>
-      <div className="flex justify-between">
+      <div className="flex justify-between md:flex-row flex-col gap-20">
         {data.projects.map((project, index) => (
           <div key={index} className="flex flex-col w-[300px] gap-4">
             <img
@@ -32,7 +32,7 @@ const Projects = () => {
             </div>
             <div className="flex justify-between font-medium text-base text-[#3730A3] underline decoration-[#3730A3] decoration-solid underline-offset-[2px] decoration-1 dark:decoration-[#E1E1FF] ">
               <a className="dark:text-[#E1E1FF]" target="_blank" href={project.github}>Github</a>
-              <a className="dark:text-[#E1E1FF]" target="_blank" href={project.view}>{language === "tr" ? "Siteyi Götüntüle" : "View Site"}</a>
+              <a className="dark:text-[#E1E1FF]" target="_blank" href={project.view}>{language === "tr" ? "Siteyi Görüntüle" : "View Site"}</a>
             </div>
           </div>
         ))}

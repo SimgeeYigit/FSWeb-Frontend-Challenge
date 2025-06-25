@@ -77,8 +77,8 @@ const Header = () => {
   };
 
   return (
-    <header className="pt-4 pr-[10rem] pb-20 pl-[10rem]">
-      <div className="text-[#777777] font-bold flex justify-end pb-10 items-center gap-4 ">
+    <header className="pt-4 pr-[2rem] pb-20 pl-[2rem] md:pr-[10rem] md:pl-[10rem]"> 
+      <div className="text-[#777777] font-bold flex flex-col md:flex-row justify-end pb-10 items-center gap-4">
         <label className="relative inline-flex items-center cursor-pointer">
           <input
             type="checkbox"
@@ -112,7 +112,7 @@ const Header = () => {
             notifylang();
             dispatch(changeLanguage());
           }}
-          className="cursor-pointer"
+          className="cursor-pointer text-center"
         >
           {language === "tr" ? (
             <>
@@ -131,11 +131,11 @@ const Header = () => {
           )}
         </p>
       </div>
-      <nav className="flex font-inter items-center justify-between">
-        <p className="text-2xl text-[#7B61FF] bg-[#EEEBFF] w-[64px] h-[64px] rounded-full flex items-center justify-center dark:bg-[#4731D3] dark:text-[#8F88FF]">
+      <nav className="flex font-inter items-center justify-between md:flex-row flex-col gap-4 md:gap-0">
+        <p className="text:xl md:text-2xl text-[#7B61FF] bg-[#EEEBFF] w-[32px] h-[32px] md:w-[64px] md:h-[64px] rounded-full flex items-center justify-center dark:bg-[#4731D3] dark:text-[#8F88FF]">
           {data.nav.text}
         </p>
-        <div className="flex gap-20 items-center">
+        <div className="flex gap-4 items-center md:flex-row flex-col md:gap-20">
           {data.nav.sections.map((section, index) => (
             <div
               key={index}
