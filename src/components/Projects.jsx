@@ -4,12 +4,12 @@ import portfolio from "../assets/projects/portfolio.png";
 import film from "../assets/projects/film.png";
 
 const Projects = () => {
-  const { content } = useSelector((store) => store);
+  const { content, language } = useSelector((store) => store);
   const data = content.projectsSection;
   const img = [pizza, portfolio, film];
 
   return (
-    <section id="projects" className="pr-[20rem] pl-[20rem] pb-[150px]">
+    <section id="projects" className="pr-[10rem] pl-[10rem] pb-[150px]">
       <p className="title pb-8">{data.title}</p>
       <div className="flex justify-between">
         {data.projects.map((project, index) => (
@@ -31,8 +31,8 @@ const Projects = () => {
               ))}
             </div>
             <div className="flex justify-between font-medium text-base text-[#3730A3] underline decoration-[#3730A3] decoration-solid underline-offset-[2px] decoration-1 dark:decoration-[#E1E1FF] ">
-              <a className="dark:text-[#E1E1FF]" href={project.github}>Github</a>
-              <p className="dark:text-[#E1E1FF]">{project.view}</p>
+              <a className="dark:text-[#E1E1FF]" target="_blank" href={project.github}>Github</a>
+              <a className="dark:text-[#E1E1FF]" target="_blank" href={project.view}>{language === "tr" ? "Siteyi Götüntüle" : "View Site"}</a>
             </div>
           </div>
         ))}

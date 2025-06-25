@@ -167,11 +167,11 @@
       ]
     },
     "skillsSection": {
-      "title": "Skills",
+      "title": "Yetenekler",
       "skills": [
         {
-          "name": "Java Script",
-          "text": "Java Script ile Frontend geliştirme süreçlerinde deneyim sahibiyim ve kullanıcı arayüzlerini dinamik hale getirebiliyorum."
+          "name": "JavaScript",
+          "text": "JavaScript ile Frontend geliştirme süreçlerinde deneyim sahibiyim ve kullanıcı arayüzlerini dinamik hale getirebiliyorum."
         },
         {
           "name": "React.Js",
@@ -218,21 +218,28 @@
       }
     },
     "projectsSection": {
-      "title": "Projects",
+      "title": "Projeler",
       "projects": [
         {
-          "title": "ABC",
-          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "title": "Pizza Sipariş Sistemi",
+          "text": "Bu proje, React ile geliştirilmiş tek sayfa uygulamasıdır. Kullanıcılar, Teknolojik Yemekler arayüzü üzerinden boyut, malzemeler seçerek ve özel notlar bırakarak pizza siparişi oluşturabilirler. Form, kontrollü bileşenler kullanılarak yönetilir ve veriler Axios ile sahte bir API'ye gönderilir. Gönderim sonrası, sipariş detayları prop-lifting yöntemiyle onay sayfasında gösterilir.",
           "need": ["react", "axios", "css"],
-          "github": "Github",
-          "view": "View Site"
+          "github": "https://github.com/SimgeeYigit/fsweb-s8-challenge-pizza",
+          "view": "https://fsweb-s8-challenge-pizza-kappa-amber.vercel.app/"
         },
         {
-          "title": "Portfolio Project",
-          "text": "This project is a Single Page Application built with React. Users can create a pizza order through the Teknolojik Yemekler interface by selecting size, ingredients, and leaving special notes. The form is managed using controlled inputs and the data is submitted to a mock API via Axios. After submission, the order details are displayed on a confirmation page using prop-lifting.",
+          "title": "Portföy Projesi",
+          "text": "Kişisel portföy web sitemi React ve modern frontend teknolojileri kullanarak geliştirdim. Tasarımı piksel hassasiyetinde uyguladım ve tam anlamıyla responsive bir düzen oluşturdum; ayrıca hem karanlık/aydınlık tema desteği hem de Türkçe ve İngilizce olmak üzere çift dil seçeneği ekledim. Kullanıcı tercihleri LocalStorage aracılığıyla saklanmaktadır. Projeyi Vercel üzerinde yayınlayarak herkesin erişimine açtım.",
           "need": ["react", "redux", "tailwindcss"],
-          "github": "Github",
-          "view": "View Site"
+          "github": "https://github.com/SimgeeYigit/FSWeb-Frontend-Challenge",
+          "view": "https://fs-web-frontend-challenge-smoky.vercel.app/"
+        },
+        {
+          "title": "Redux İzleme Listesi",
+          "text": "Kullanıcılar listelenen filmleri görüntüleyebilir ve istedikleri filmleri favori listesine ekleyebilir. Uygulama global durum yönetimi için Redux kullanırken, film verilerini almak için Axios ile API entegrasyonu yapılmıştır. Modern ve kullanıcı dostu arayüzü sayesinde izlemek istediğiniz filmleri kolayca takip edebilirsiniz. Projenin GitHub deposuna ve canlı demosuna bağlantılar üzerinden ulaşılabilir.",
+          "need": ["react", "axios", "redux"],
+          "github": "https://github.com/SimgeeYigit/fsweb-s10g3-redux-watchlist-solution",
+          "view": "https://fsweb-s10g3-redux-watchlist-solutio-delta.vercel.app/"
         }
       ]
     },
@@ -242,7 +249,7 @@
         "second": "birlikte çalışalım"
       },
       "email": "simgeyigit98@gmail.com",
-      "contact": ["Personal Blog", "Github", "Linkedin"]
+      "contact": ["Kişisel Blog", "Github", "Linkedin"]
     }
   }
 }

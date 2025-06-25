@@ -10,7 +10,7 @@ const Hero = () => {
   const data = content.heroSection;
 
   return (
-    <section className="py-16 pt-4 pr-[20rem] pb-20 pl-[20rem]">
+    <section className="py-16 pt-4 pr-[10rem] pb-20 pl-[10rem]">
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-8 w-[50%]">
           <div className="flex items-center gap-4">

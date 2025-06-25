@@ -4,7 +4,7 @@ const Profile = () => {
   const { content } = useSelector((store) => store);
   const data = content.profileSection;
   return (
-    <section className="pt-12 pb-12 pr-[20rem] pl-[20rem]">
+    <section className="pt-12 pb-12 pr-[10rem] pl-[10rem]">
       <div className="border-b-[1px] border-solid border-[#BAB2E7] pb-12">
         <p className="title pb-6">{data.title}</p>
 

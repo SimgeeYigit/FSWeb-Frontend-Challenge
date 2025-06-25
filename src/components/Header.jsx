@@ -77,7 +77,7 @@ const Header = () => {
   };
 
   return (
-    <header className="pt-4 pr-[20rem] pb-20 pl-[20rem]">
+    <header className="pt-4 pr-[10rem] pb-20 pl-[10rem]">
       <div className="text-[#777777] font-bold flex justify-end pb-10 items-center gap-4 ">
         <label className="relative inline-flex items-center cursor-pointer">
           <input

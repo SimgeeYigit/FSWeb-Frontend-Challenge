@@ -7,7 +7,7 @@ const Footer = () => {
 
   return (
     <footer className="h-[409px] bg-[#F9F9F9] dark:bg-[#141414]">
-      <div className="flex flex-col justify-center gap-12 h-full pt-4 pr-[20rem] pb-20 pl-[20rem]">
+      <div className="flex flex-col justify-center gap-12 h-full pt-4 pr-[10rem] pb-20 pl-[10rem]">
         <div className="flex flex-col font-semibold text-[42px] text-[#1F2937] dark:text-[#AEBCCF]">
           <p>{data.title.first}</p>
           <p>{data.title.second}</p>
