@@ -236,7 +236,7 @@
         },
         {
           "title": "Redux İzleme Listesi",
-          "text": "Kullanıcılar listelenen filmleri görüntüleyebilir ve istedikleri filmleri favori listesine ekleyebilir. Uygulama global durum yönetimi için Redux kullanırken, film verilerini almak için Axios ile API entegrasyonu yapılmıştır. Modern ve kullanıcı dostu arayüzü sayesinde izlemek istediğiniz filmleri kolayca takip edebilirsiniz. Projenin GitHub deposuna ve canlı demosuna bağlantılar üzerinden ulaşılabilir.",
+          "text": "Users can browse a list of movies and add their favorites to a personal list. The application uses Redux for global state management and integrates with an external API via Axios to fetch movie data. Thanks to its modern and user-friendly interface, users can easily keep track of the movies they want to watch. The project includes links to both the GitHub repository and the live demo.",
           "need": ["react", "axios", "redux"],
           "github": "https://github.com/SimgeeYigit/fsweb-s10g3-redux-watchlist-solution",
           "view": "https://fsweb-s10g3-redux-watchlist-solutio-delta.vercel.app/"
